@@ -34,10 +34,14 @@ function listarAmigos() {
     }        
 }
 
+// Sortear amigo
 function sortearAmigo() {
+    
     let listaAmigos = document.getElementById('listaAmigos');
     let amigos = listaAmigos.children;
-
+    
+    if (amigos.length === 0) return alert('Não há amigos para sortear, cadastre seus amigos!');
+    
     let amigoSorteadoIndex = Math.floor(Math.random() * amigos.length);   
     let amigoSorteado = amigos[amigoSorteadoIndex].textContent
 
