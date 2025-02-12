@@ -9,11 +9,26 @@ function adicionarAmigo() {
     
     amigos.push(novoNome);
     limparInput();
-    console.log(amigos)
-    
+
+    listarAmigos();    
 }
+
 // Limpar campo do input
 function limparInput() {
     let input = document.getElementById("amigo");
     input.value = '';    
+}
+
+function listarAmigos() {
+    let listaAmigos = document.getElementById('listaAmigos');
+
+    listaAmigos.innerHTML = '';
+
+    for (let i = 0; i < amigos.length; i++) {
+        const element = amigos[i];
+
+        let li = document.createElement('li');
+        li.textContent = element;
+        listaAmigos.appendChild(li);
+    }        
 }
