@@ -19,6 +19,7 @@ function limparInput() {
     input.value = '';    
 }
 
+// Listar amigos
 function listarAmigos() {
     let listaAmigos = document.getElementById('listaAmigos');
 
@@ -31,4 +32,19 @@ function listarAmigos() {
         li.textContent = element;
         listaAmigos.appendChild(li);
     }        
+}
+
+function sortearAmigo() {
+    let listaAmigos = document.getElementById('listaAmigos');
+    let amigos = listaAmigos.children;
+
+    let amigoSorteadoIndex = Math.floor(Math.random() * amigos.length);   
+    let amigoSorteado = amigos[amigoSorteadoIndex].textContent
+
+    let sorteado = document.getElementById('resultado');
+    let resultado = document.createElement('li');
+    resultado.textContent = amigoSorteado
+    sorteado.appendChild(resultado);
+
+    return amigoSorteado;
 }
