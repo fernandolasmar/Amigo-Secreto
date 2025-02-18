@@ -12,11 +12,10 @@
     </ul>
 </div>
 
-<div>
-<!-- colocar imagens do APP funcionando -->
-![Tela Inicial da aplicação](assets/Tela-inicial.jpg)
-![Adicionando amigos](assets/Adicionando-amigos.jpg)
-![Sorteando um amigo](assets/Sorteando-amigo.jpg)    
+<div align="center" width="100%">
+    <img width="33%" src="assets/Tela-inicial.jpg"><br>
+    <img width="33%" src="assets/Adicionando-amigos.jpg"><br>
+    <img width="33%" src="assets/Sorteando-amigo.jpg">
 </div>
 
 <div>
